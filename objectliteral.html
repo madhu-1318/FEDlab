@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>
+            Creating objects to javascript classes using Object literals
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+           
+            let obj={
+                l:10,
+                b:30,
+                h:40,
+                display:function(){
+                console.log(`length:${obj.l}`);
+                console.log(`Breadth:${obj.b}`);
+                console.log(`height:${obj.h}`);
+                },
+                v:function(){
+                  return obj.l*obj.b*obj.h;
+                }
+            };
+            
+            obj.display();
+            console.log(`Volume of box:${obj.v()}`);
+        </script>
+    </body>
+</html>
